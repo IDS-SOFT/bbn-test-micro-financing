@@ -89,7 +89,7 @@ contract MicrofinancingContract {
     
     function getBalance(address user_account) external returns (uint){
        uint user_bal = user_account.balance;
-       emit CheckBalance(data, user_bal );
+       emit CheckBalance(user_bal);
        return (user_bal);
     }
 }
